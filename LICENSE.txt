@@ -1,1 +1,68 @@
-this is le license
+THIS LICENSE IS A LEGAL AGREEMENT BETWEEN YOU (either an individual or single entity) AND THE COPYRIGHT HOLDING TEAM. IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS DEFINED BY THIS LICENSE, DO NOT USE/INSTALL/EDIT THE PROJECT.
+
+THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS LICENSE. THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+
+BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
+
+
+
+||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||
+||~~  PPL - Public Protected License  ~~||
+||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||
+Version 1 - 26.05.2012
+
+Everyone is permitted to copy and distribute copies of this license document as long as due credit is given and in the case of modification the differences are made clear to the reader. The author is not a law firm and does not provide legal services. Distributing of, displaying of, or linking to this license does not create an attorney-client relationship.
+
+
+
+HUMAN-READABLE PREAMBLE
+This Preamble is simply a handy reference for understanding the Legal Code (the full license), it is a human-readable expression of some of its key terms. This preamble itself has no legal value, and its contents do not appear in the actual license. 
+
+You are free:
+    * to use the project at your own discretion
+    * to share links to the official download pages of the project
+    * to extend the project
+
+Under the following conditions:
+    * you must request to have your new code added to the official repositories
+
+You may not:
+    * distribute alternate download links to the official ones
+    * distribute unofficial modifications of the project
+    * use the project for any law-infringing purposes
+
+While understanding that:
+    * that any of the conditions may be waived at the team's discretion
+    * any parts of the project that underlie another license are not affected by this license
+    * this license does not override applicable law including but not limited to team's moral rights, fair use rights or publicity/privacy rights
+
+
+
+TERMS AND CONDITIONS
+
+0. DEFINITIONS
+"You" are the individual or single entity making use of the project.
+"This License" refers to version 1 of the Secure Protected License.
+"Copyright" also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.
+"The Project" refers to the project in it's whole, including but not limited to the source code of the project, associated graphics, sounds or music. 
+// what is the difference between licensee and licensor??
+    "Licensees", "Recipients" and "Licensors" may be individuals or organisations.
+    "Licensees" may be referred to as "you", "the user", "the editor".
+    The "Licensor" is the individual/team that holds the copyright to the project.
+To "modify" a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an "exact copy". The resulting work is called a "modified version" of the earlier work or a work "based on" the earlier work. Another work that is an exact copy of the project shall be referenced to as an "alternate build" or "alternat package"
+A "covered work" means either an alternate build or a modified version.
+To “propagate” a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.
+To “convey” a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.
+The “Appropriate Legal Notices” shall be displayed to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that (licensees) may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list 
+meets this criterion.
+
+
+
+1. 
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~
+VolumetricPixels reserves the right to change this license at any given time without warning.

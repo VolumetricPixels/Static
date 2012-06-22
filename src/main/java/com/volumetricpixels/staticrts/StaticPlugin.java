@@ -8,6 +8,56 @@
  */
 package com.volumetricpixels.staticrts;
 
-public class StaticPlugin {
+import org.spout.api.plugin.CommonPlugin;
+
+import com.volumetricpixels.staticrts.config.StaticConfiguration;
+
+/**
+ * Static Plugin
+ */
+public class StaticPlugin extends CommonPlugin {
+	
+	private final StaticManager manager;
+	
+	private StaticConfiguration config;
+	
+	public StaticPlugin() {
+		// Initialize variables that don't require the plugin to be enabled
+		i = this;
+		this.manager = new StaticManager(this);
+	}
+
+	@Override
+    public void onEnable() {
+		// Initialize variables that need Spout method calls
+	    this.config = new StaticConfiguration(this.getDataFolder());
+    }
+
+	@Override
+    public void onDisable() {
+	    
+    }
+	
+	/**
+	 * Gets the Static Manager
+	 * @return The StaticManager
+	 */
+	public StaticManager getManager() {
+		return manager;
+	}
+	
+	/**
+	 * Gets the Static Configuration
+	 * @return The StaticConfiguration
+	 */
+	public StaticConfiguration getConfig() {
+		return config;
+	}
+	
+	private static StaticPlugin i;
+	
+	public static StaticPlugin getInstance() {
+		return i;
+	}
 
 }
