@@ -8,6 +8,7 @@
  */
 package com.volumetricpixels.staticrts;
 
+import org.spout.api.entity.component.controller.type.ControllerType;
 import org.spout.api.plugin.CommonPlugin;
 
 import com.volumetricpixels.staticrts.config.StaticConfiguration;
@@ -17,6 +18,8 @@ import com.volumetricpixels.staticrts.config.StaticConfiguration;
  */
 public class StaticPlugin extends CommonPlugin {
 	
+	public static final int PROTOCOL_ID = ControllerType.getProtocolId("com.volumetricpixels.staticrts.protocol");
+
 	private final StaticManager manager;
 	
 	private StaticConfiguration config;
