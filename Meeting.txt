@@ -1,0 +1,65 @@
+Static Dev Notes 22nd June 2012
+
+Unit --> Subclasses for types --> Subclasses for subtypes
+
+Multiple settings (Space, Modern, etc., multiple defaults?)
+
+Customizable gamepacks (setting, units, options)
+
+Max population (changable in gamepack)
+
+Editor GUI for gamepacks
+
+GamePack Dir Tree:
+
+gamepackname/
+    pack.yml
+    textures/
+        texture.png
+        othertexture.png
+        asdf.bmp
+    models/
+        i.mdl
+        dont.dat
+        knowwhatextensiontouse.vxl
+    audio/
+        explosion.wav
+        awesome.wav
+        winner.ogg
+
+Structure of Units:
+
+Entity (From Spout) 
+--> Unit 
+--> TypeOfUnit (Land, Vehicle, water, etc) 
+--> Specific Unit (Creatable or Pre-defined?)
+
+"Static/units/TYPENAME/UnitName.yml"
+- Defines a unit, behaves depending on folder
+positioned in, TYPENAME possibilities:
+
+Infantry
+Water
+Vehicle
+Air
+
+And subtypes of types?
+
+Theme / colours fully customizable in PNG form and
+using Java's Color file. Customize different things
+separately (headers, text).
+
+Unit names controlled by custom units.
+
+Voxel Editor Hooking / World / Terrain:
+
+Clump static blocks together for better performance.
+
+Certain blocks breakable (but maybe class as buildings), 
+by shooting with soldiers etc, mainly static terrain.
+
+Have 
+
+Structure
+  --> Building
+  --> TerrainStructure
