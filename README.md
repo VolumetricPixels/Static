@@ -4,7 +4,7 @@ Static is a new Spout engine based RTS.
 
 ## The Team:
 
-* @DrAgonmoray - Project Lead
+* @DrAgonmoray - Developer
 * @DziNeIT - Developer
 * @Kohle - Developer
 * @ThatBox - Developer
