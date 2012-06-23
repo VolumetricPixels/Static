@@ -17,11 +17,11 @@ Static is an RTS game built on the Spout voxel engine. It is still in its very e
 
 ##The Team:
 <table>
-  <tr>
-		<td>![DrAgonmoray](http://minotar.net/helm/DrAgonmoray/48 "DrAgonmoray") DrAgonmoray</td>
-		<td>![DziNeIT](http://minotar.net/helm/PandazNWafflez/48 "DziNeIT") DziNeIT</td>
-		<td>![ThatBox](http://minotar.net/helm/Thatb0x/48 "ThatBox") ThatBox</td>
-		<td>![Kohle](http://minotar.net/helm/minerman4/48 "Kohle") Kohle</td>
-		<td>![Iron\_Crystal](http://minotar.net/helm/Iron\_Crystal/48 "Iron\_Crystal") Iron\_Crystal</td>
+	<tr>
+		<td> ![DrAgonmoray](http://minotar.net/helm/DrAgonmoray/48 "DrAgonmoray") DrAgonmoray</td>
+		<td> ![DziNeIT](http://minotar.net/helm/PandazNWafflez/48 "DziNeIT") DziNeIT</td>
+		<td> ![ThatBox](http://minotar.net/helm/Thatb0x/48 "ThatBox") ThatBox</td>
+		<td> ![Kohle](http://minotar.net/helm/minerman4/48 "Kohle") Kohle</td>
+		<td> ![Iron\_Crystal](http://minotar.net/helm/Iron\_Crystal/48 "Iron\_Crystal") Iron\_Crystal</td>
 	</tr>
 </table>
