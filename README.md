@@ -18,7 +18,7 @@ Static is an RTS game built on the Spout voxel engine. It is still in its very e
 ##The Team:
 <table>
 	<tr>
-		<th><img src="http://minotar.net/helm/DrAgonmoray/48" alt="DrAgonmoray" title="DrAgonmoray"/><br/>DrAgonmoray</th>
+		<th align="center"><img src="http://minotar.net/helm/DrAgonmoray/48" alt="DrAgonmoray" title="DrAgonmoray"/><br/>DrAgonmoray</th>
 		<th><img src="http://minotar.net/helm/PandazNWafflez/48" alt="DziNeIT" title="DziNeIT"/><br/>DziNeIT</th>
 		<th><img src="http://minotar.net/helm/Thatb0x/48" alt="ThatBox" title="ThatBox"/><br/>ThatBox</th>
 		<th><img src="http://minotar.net/helm/minerman4/48" alt="Kohle" title="Kohle"/><br/>Kohle</th>
