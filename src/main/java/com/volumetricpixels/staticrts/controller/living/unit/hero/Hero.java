@@ -6,15 +6,18 @@
  *
  * We need to put a short thing here that goes at the top of every file.
  */
-package com.volumetricpixels.staticrts.protocol.controller.living;
+package com.volumetricpixels.staticrts.controller.living.unit.hero;
 
+import com.volumetricpixels.staticrts.controller.StaticControllerType;
 import com.volumetricpixels.staticrts.controller.living.unit.Unit;
-import com.volumetricpixels.staticrts.protocol.controller.BasicUnitProtocol;
 
-public abstract class UnitProtocol extends BasicUnitProtocol {
-	
-	public static final UnitProtocol getProtocolFor(Unit u) {
-		return null;
-	}
+/**
+ * Represents a Hero
+ */
+public abstract class Hero extends Unit {
+
+	public Hero(StaticControllerType type) {
+	    super(type);
+    }
 	
 }

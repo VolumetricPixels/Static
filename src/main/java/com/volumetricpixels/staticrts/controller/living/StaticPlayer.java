@@ -14,8 +14,19 @@ public class StaticPlayer {
 	
 	private Player spoutPlayer;
 	
+	private boolean isPlayingFP = false;
+	
 	public Player getSpoutController() {
 		return spoutPlayer;
+	}
+	
+	/**
+	 * Players can play in First Person as a hero
+	 * This method checks whether the player is
+	 * @return Whether the player is in First Person
+	 */
+	public boolean isPlayingAsHero() {
+		return isPlayingFP;
 	}
 	
 }

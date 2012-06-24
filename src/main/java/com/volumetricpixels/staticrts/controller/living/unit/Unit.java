@@ -6,16 +6,15 @@
  *
  * We need to put a short thing here that goes at the top of every file.
  */
-package com.volumetricpixels.staticrts.controller.living;
+package com.volumetricpixels.staticrts.controller.living.unit;
 
 import com.volumetricpixels.staticrts.controller.StaticControllerType;
+import com.volumetricpixels.staticrts.controller.living.Living;
 
 public abstract class Unit extends Living {
 	
 	public Unit(StaticControllerType type) {
 		super(type);
 	}
-	
-	public abstract UnitType getUnitType();
 	
 }
