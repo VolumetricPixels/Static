@@ -24,6 +24,22 @@ Static is an RTS game built on the Spout voxel engine. It is still in its very e
 		<th><img src="https://en.gravatar.com/userimage/33964137/1a88e05eaeb009a4323e3076b309313c.png?size=55" alt="DziNeIT" title="DziNeIT"/><br/>DziNeIT</th>
 		<th><img src="http://minotar.net/helm/Thatb0x/48" alt="ThatBox" title="ThatBox"/><br/>ThatBox</th>
 		<th><img src="http://minotar.net/helm/minerman4/48" alt="Kohle" title="Kohle"/><br/>Kohle</th>
-		<th><img src="http://minotar.net/helm/Herobine/48" alt="Iron_Crystal" title="Iron_Crystal"/><br/>Iron_Crystal</th>
+		<th><img src="http://en.gravatar.com/userimage/36607853/8a0a5af7c32f01350a4aa64353cf9b44.jpg?size=55" alt="IronCrystal" title="IronCrystal"/><br/>IronCrystal</th>
 	</tr>
 </table>
+
+##Pull Request Guidelines / Code Conventions:
+
+###Code Style:
+
+* If / for / while statement: if (conditions) {
+* Method: public void method() {
+* Tabs only, no spaces!
+* No trailing whitespace
+* Midstatement newlines at an 200 column limit
+
+###GitHub Things:
+
+* Try to keep about of commits to one, use amend and squash commits!
+* Sign off all commits!
+* The finished product with your pull request must compile and run on Spout.
