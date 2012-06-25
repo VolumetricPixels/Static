@@ -24,6 +24,6 @@ Static is an RTS game built on the Spout voxel engine. It is still in its very e
 		<th><img src="https://en.gravatar.com/userimage/33964137/1a88e05eaeb009a4323e3076b309313c.png?size=55" alt="DziNeIT" title="DziNeIT"/><br/>DziNeIT</th>
 		<th><img src="http://minotar.net/helm/Thatb0x/48" alt="ThatBox" title="ThatBox"/><br/>ThatBox</th>
 		<th><img src="http://minotar.net/helm/minerman4/48" alt="Kohle" title="Kohle"/><br/>Kohle</th>
-		<th><img src="http://minotar.net/helm/Herobine/48" alt="IronCrystal" title="IronCrystal"/><br/>IronCrystal</th>
+		<th><img src="http://en.gravatar.com/userimage/36607853/8a0a5af7c32f01350a4aa64353cf9b44.jpg?size=200" alt="IronCrystal" title="IronCrystal"/><br/>IronCrystal</th>
 	</tr>
 </table>
