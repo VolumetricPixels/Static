@@ -8,6 +8,8 @@
  */
 package com.volumetricpixels.staticrts;
 
+import com.volumetricpixels.staticrts.config.StaticConfiguration;
+
 /**
  * Manages Static
  * 
@@ -24,6 +26,14 @@ public class StaticManager {
 	
 	StaticManager initialize() {
 		return this;
+	}
+	
+	public StaticConfiguration getConfig() {
+		return getPlugin().getConfig();
+	}
+	
+	public StaticPlugin getPlugin() {
+		return plugin;
 	}
 	
 }

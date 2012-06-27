@@ -6,7 +6,14 @@
  *
  * We need to put a short thing here that goes at the top of every file.
  */
-package com.volumetricpixels.staticrts.controller;
+package com.volumetricpixels.staticrts.controller.living.unit.air;
 
-public class StaticControllerTypes {
+import com.volumetricpixels.staticrts.controller.StaticControllerType;
+
+public class GenericPlaneUnit extends AirUnit {
+
+	public GenericPlaneUnit() {
+	    super(StaticControllerType.PLANE);
+    }
+	
 }
