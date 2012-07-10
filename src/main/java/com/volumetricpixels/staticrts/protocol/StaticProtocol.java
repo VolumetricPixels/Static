@@ -8,6 +8,7 @@
  */
 package com.volumetricpixels.staticrts.protocol;
 
+import org.spout.api.protocol.Message;
 import org.spout.api.protocol.Protocol;
 
 public class StaticProtocol extends Protocol {
@@ -15,5 +16,23 @@ public class StaticProtocol extends Protocol {
 	public StaticProtocol() {
 	    super("Static", new StaticCodecLookupService(), new StaticHandlerLookupService());
     }
+
+	@Override
+	public Message getChatMessage(Object... arg0) {
+		// TODO Add messages
+		return null;
+	}
+
+	@Override
+	public Message getIntroductionMessage(String arg0) {
+		// TODO Add messages
+		return null;
+	}
+
+	@Override
+	public Message getKickMessage(Object... arg0) {
+		// TODO Add messages
+		return null;
+	}
 	
 }
