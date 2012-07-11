@@ -27,6 +27,7 @@ Static is an RTS game built on the Spout voxel engine. It is still in its very e
 		<th><img src="http://minotar.net/helm/Thatb0x/55" alt="ThatBox" title="ThatBox"/><br/>ThatBox</th>
 	</tr>
 </table>
+<i>Team members are listed in alphabetical order to show that we are all equal.</i>
 
 ##Pull Request Guidelines / Code Conventions:
 
