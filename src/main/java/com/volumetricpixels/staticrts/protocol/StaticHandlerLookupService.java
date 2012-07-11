@@ -30,6 +30,7 @@ public class StaticHandlerLookupService extends HandlerLookupService {
 		handlers.put(clazz, handlerClass.newInstance());
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T extends Message> MessageHandler<T> find(Class<T> clazz) {
 		return (MessageHandler<T>) handlers.get(clazz);
