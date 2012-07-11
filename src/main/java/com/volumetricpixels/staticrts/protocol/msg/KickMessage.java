@@ -1,10 +1,11 @@
 /*
-  * This file is a part of a compilation by Kohle F. (http://mrkohle.com).
-  * 
-  * This project is licensed under the Creative Commons Attribution-ShareAlike License. (http://creativecommons.org/licenses/by-sa/3.0/)
-  * 
-  * This file was created on Jul 11, 2012 at 6:32:46 PM
-*/
+ * This file is part of Static.
+ *
+ * Copyright (c) 2012-2012, VolumetricPixels <http://volumetricpixels.com/>
+ * Static is licensed under the Public Protected License Version 1.
+ *
+ * We need to put a short thing here that goes at the top of every file.
+ */
 package com.volumetricpixels.staticrts.protocol.msg;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
