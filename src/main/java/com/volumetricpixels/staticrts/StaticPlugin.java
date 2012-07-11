@@ -34,6 +34,12 @@ public class StaticPlugin extends CommonPlugin {
     public void onEnable() {
 		// Initialize variables that need Spout method calls
 	    this.config = new StaticConfiguration(this.getDataFolder());
+	    
+	    //Send a nice startup message to the console
+	    getLogger().info("* * * * * * * * * *");
+	    getLogger().info("Static RTS v" + getDescription().getVersion() + " enabled!");
+	    getLogger().info("Report issues, suggestions, and feature requests at http://goo.gl/RN8rc");
+	    getLogger().info("* * * * * * * * * *");
     }
 
 	@Override
