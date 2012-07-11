@@ -32,6 +32,8 @@ public class StaticProtocol extends Protocol {
 	@Override
 	public Message getKickMessage(Object... arg0) {
 		// TODO Add messages
+		//StaticStyleHandler & Chat needs to be implemented, KickMessage needs to be finished
+		//return new KickMessage(ChatStyle.stringify(StaticStyleHandler.ID, message));
 		return null;
 	}
 	
