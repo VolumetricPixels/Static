@@ -15,7 +15,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <mainClass>com.volumetricpixels.staticrts.StaticPlugin</mainClass>
     <staticVersion>dev-SNAPSHOT</staticVersion>
-    <protocolVersion>29</protocolVersion>
+    <protocolVersion>1</protocolVersion>
     <buildNumber>0</buildNumber>
   </properties>
   
@@ -26,7 +26,7 @@
   
   <licenses>
     <license>
-      <name>Public Protected License Version 1</name>
+      <name>VolumetricPixels License Version 1</name>
       <url>http://google.com</url>
       <distribution>repo</distribution>
     </license>
@@ -125,7 +125,7 @@
           <properties>
             <name>${project.name}</name>
             <url>${project.organization.url}</url>
-            <license>Public Protected License Version 1</license>
+            <license>VolumetricPixels License Version 1</license>
             <licenseUrl>http://google.com</licenseUrl>
             <copyright>Copyright (c) ${project.inceptionYear}-2012, ${project.organization.name}</copyright>
           </properties>
