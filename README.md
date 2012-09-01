@@ -28,18 +28,21 @@ Static is an RTS game built on the Spout voxel engine. It is still in its very e
 	</tr>
 </table>
 
-##Pull Request Guidelines / Code Conventions:
-
-###Code Style:
-
-* If / for / while statement: if (conditions) {
-* Method: public void method() {
-* Tabs only, no spaces!
+Coding Standards
+----------------------------------
+* If / for / while / switch statement: if (conditions && stuff) {
+* Method: public void method(Object paramObject) {
+* No Tabs, Spaces only!
 * No trailing whitespace
-* Midstatement newlines at an 200 column limit
+* Mid-statement newlines at a 200 column limit
+* camelCase, no under_scores except constants
+* Constants in full caps with underscores
+* Keep the same formatting style everywhere
 
-###GitHub Things:
-
-* Try to keep about of commits to one, use amend and squash commits!
-* Sign off all commits!
-* The finished product with your pull request must compile and run on Spout.
+Pull Request Standards
+----------------------------------
+* Sign-off on all commits!
+* Finished product must compile and run!
+* No merges should be included in pull requests unless the pull request's purpose is a merge.
+* Number of commits in a pull request should be kept to *one commit* and all additional commits must be *squashed*. Pull requests that make multiple changes should have one commit per change.
+* Pull requests must include any applicable license headers. (These are generated when running `mvn`)
