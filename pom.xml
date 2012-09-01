@@ -33,9 +33,9 @@
   </licenses>
   
   <scm>
-    <developerConnection>scm:git:git@github.com:StaticRTS/Static.git</developerConnection>
-    <connection>scm:git:git://github.com/StaticRTS/Static.git</connection>
-    <url>https://github.com/StaticRTS/Static</url>
+    <developerConnection>scm:git:git@github.com:VolumetricPixels/Static.git</developerConnection>
+    <connection>scm:git:git://github.com/VolumetricPixels/Static.git</connection>
+    <url>https://github.com/VolumetricPixels/Static</url>
   </scm>
   
   <repositories>
