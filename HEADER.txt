@@ -2,5 +2,3 @@ This file is part of ${name}.
 
 ${copyright} <${url}/>
 ${name} is licensed under the ${license}.
-
-We need to put a short thing here that goes at the top of every file.

@@ -1,9 +1,7 @@
 ![Static](http://i.imgur.com/ExuZJ.png "Static")
 
 ##What is Static?
-Static is an RTS game built on the Spout voxel engine. It is still in its very early stages of development.
-
-[-Spout Forums Page-](http://forums.spout.org/threads/coregame-static-voxel-based-real-time-strategy-game.3293/)
+Static is an RTS game built on the Spout voxel engine. It is still in very early stages of development.
 
 ##Core Ideas:
 - _Gamepacks_
@@ -20,7 +18,6 @@ Static is an RTS game built on the Spout voxel engine. It is still in its very e
 ##The Team:
 <table>
 	<tr>
-		<th><img src="http://minotar.net/helm/DrAgonmoray/55" alt="DrAgonmoray" title="DrAgonmoray"/><br/>DrAgonmoray</th>
 		<th><img src="https://en.gravatar.com/userimage/33964137/1a88e05eaeb009a4323e3076b309313c.png?size=55" alt="DziNeIT" title="DziNeIT"/><br/>DziNeIT</th>
 		<th><img src="http://en.gravatar.com/userimage/36607853/8a0a5af7c32f01350a4aa64353cf9b44.jpg?size=55" alt="IronCrystal" title="IronCrystal"/><br/>IronCrystal</th>
 		<th><img src="https://dl.dropbox.com/u/35876967/fancykohlewhitebg.png" width="55" height="55" alt="Kohle" title="Kohle"/><br/>Kohle</th>
@@ -42,7 +39,7 @@ Coding Standards
 Pull Request Standards
 ----------------------------------
 * Sign-off on all commits!
-* Finished product must compile and run!
+* Finished product must compile successfully with `mvn`!
 * No merges should be included in pull requests unless the pull request's purpose is a merge.
 * Number of commits in a pull request should be kept to *one commit* and all additional commits must be *squashed*. Pull requests that make multiple changes should have one commit per change.
 * Pull requests must include any applicable license headers. (These are generated when running `mvn`)

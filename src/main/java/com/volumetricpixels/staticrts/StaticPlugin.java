@@ -11,16 +11,16 @@ public class StaticPlugin extends CommonPlugin {
     private static StaticPlugin instance;
     private static boolean server = false;
     private static boolean client = false;
-    
+
     public StaticPlugin() {
         if (instance != null) {
             throw new IllegalStateException("A duplicate instance of StaticPlugin was created!");
         }
         instance = this;
     }
-    
+
     private StaticServerConfiguration config;
-    
+
     @Override
     public void onLoad() {
         Platform p = Spout.getPlatform();
@@ -28,7 +28,7 @@ public class StaticPlugin extends CommonPlugin {
             server = true;
             // Load StaticConfiguration
             this.config = new StaticServerConfiguration();
-        
+
             try {
                 config.load();
             } catch (ConfigurationException e) {
@@ -36,10 +36,10 @@ public class StaticPlugin extends CommonPlugin {
             }
         } else if (p == Platform.CLIENT) {
             client = true;
-            // TODO: Client onLoad?
+            // TODO: Client stuff?
         }
     }
-    
+
     @Override
     public void onEnable() {
         if (server) {
@@ -52,9 +52,9 @@ public class StaticPlugin extends CommonPlugin {
     @Override
     public void onDisable() {
         if (server) {
-         // TODO: Server stuff
+            // TODO: Server stuff
         } else if (client) {
-         // TODO: Client stuff
+            // TODO: Client stuff
         }
     }
 }
