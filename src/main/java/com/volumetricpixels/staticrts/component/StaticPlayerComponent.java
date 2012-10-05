@@ -2,11 +2,11 @@ package com.volumetricpixels.staticrts.component;
 
 import org.spout.api.component.components.EntityComponent;
 
-import com.volumetricpixels.staticrts.game.Game;
+import com.volumetricpixels.staticrts.game.StaticGame;
 
 public class StaticPlayerComponent extends EntityComponent {
     private String playerTag;
-    private Game currentGame;
+    private StaticGame currentGame;
     private boolean isInGame;
 
     public StaticPlayerComponent(String playerName) {
@@ -17,11 +17,11 @@ public class StaticPlayerComponent extends EntityComponent {
         return isInGame;
     }
 
-    public Game getGame() {
+    public StaticGame getGame() {
         return currentGame;
     }
 
-    public StaticPlayerComponent joinGame(Game game) {
+    public StaticPlayerComponent joinGame(StaticGame game) {
         currentGame = game;
 
         if (game == null) {
@@ -35,7 +35,9 @@ public class StaticPlayerComponent extends EntityComponent {
         return this;
     }
 
-    public void quitGame() {
+    public StaticPlayerComponent quitGame() {
         currentGame.handleGameQuit(playerTag);
+
+        return this;
     }
 }

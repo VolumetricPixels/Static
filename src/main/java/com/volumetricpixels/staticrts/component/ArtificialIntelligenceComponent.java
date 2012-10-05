@@ -2,12 +2,12 @@ package com.volumetricpixels.staticrts.component;
 
 import org.spout.api.component.components.EntityComponent;
 
-import com.volumetricpixels.staticrts.game.Game;
+import com.volumetricpixels.staticrts.game.StaticGame;
 
 public class ArtificialIntelligenceComponent extends EntityComponent {
-    private Game game;
+    private StaticGame game;
 
-    public ArtificialIntelligenceComponent(Game game) {
+    public ArtificialIntelligenceComponent(StaticGame game) {
         this.game = game;
     }
 
@@ -17,7 +17,7 @@ public class ArtificialIntelligenceComponent extends EntityComponent {
         // player actions etc...
     }
 
-    public Game getGame() {
+    public StaticGame getGame() {
         return game;
     }
 }

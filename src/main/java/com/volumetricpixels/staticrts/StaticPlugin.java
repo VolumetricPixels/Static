@@ -5,24 +5,25 @@ import org.spout.api.exception.ConfigurationException;
 import org.spout.api.plugin.CommonPlugin;
 import org.spout.api.plugin.Platform;
 
+import com.volumetricpixels.staticrts.api.Static;
+import com.volumetricpixels.staticrts.api.StaticImpl;
+import com.volumetricpixels.staticrts.api.game.GameManager;
+import com.volumetricpixels.staticrts.game.StaticGameManager;
 import com.volumetricpixels.staticrts.server.StaticServerConfiguration;
 
-public class StaticPlugin extends CommonPlugin {
-    private static StaticPlugin instance;
+public final class StaticPlugin extends CommonPlugin implements StaticImpl {
     private static boolean server = false;
     private static boolean client = false;
 
-    public StaticPlugin() {
-        if (instance != null) {
-            throw new IllegalStateException("A duplicate instance of StaticPlugin was created!");
-        }
-        instance = this;
-    }
-
     private StaticServerConfiguration config;
+    private StaticGameManager gameManager;
 
     @Override
     public void onLoad() {
+        gameManager = new StaticGameManager();
+
+        Static.setStatic(this);
+
         Platform p = Spout.getPlatform();
         if (p == Platform.SERVER || p == Platform.PROXY) {
             server = true;
@@ -56,5 +57,10 @@ public class StaticPlugin extends CommonPlugin {
         } else if (client) {
             // TODO: Client stuff
         }
+    }
+
+    @Override
+    public GameManager getGameManager() {
+        return gameManager;
     }
 }
