@@ -1,5 +1,7 @@
 package com.volumetricpixels.staticrts.api;
 
+import org.spout.api.plugin.CommonPlugin;
+
 import com.volumetricpixels.staticrts.api.game.GameManager;
 
 /**
@@ -20,7 +22,7 @@ public final class Static {
     }
 
     public static void setStatic(StaticImpl impl) {
-        if (plugin != null || impl == null) {
+        if (plugin != null || impl == null || !(impl instanceof CommonPlugin)) {
             return;
         }
 
