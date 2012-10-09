@@ -5,9 +5,9 @@ import org.spout.api.exception.ConfigurationException;
 import org.spout.api.plugin.CommonPlugin;
 import org.spout.api.plugin.Platform;
 
-import com.volumetricpixels.staticrts.api.Static;
-import com.volumetricpixels.staticrts.api.StaticImpl;
-import com.volumetricpixels.staticrts.api.game.GameManager;
+import com.volumetricpixels.staticapi.Static;
+import com.volumetricpixels.staticapi.StaticImpl;
+import com.volumetricpixels.staticapi.game.GameManager;
 import com.volumetricpixels.staticrts.game.StaticGameManager;
 import com.volumetricpixels.staticrts.server.StaticServerConfiguration;
 

@@ -1,4 +1,4 @@
-package com.volumetricpixels.staticrts.api.game;
+package com.volumetricpixels.staticapi.game;
 
 import java.util.List;
 

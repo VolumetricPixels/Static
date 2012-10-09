@@ -6,8 +6,8 @@ import java.util.List;
 import org.spout.api.Spout;
 import org.spout.api.geo.World;
 
-import com.volumetricpixels.staticrts.api.game.Game;
-import com.volumetricpixels.staticrts.api.game.Gamepack;
+import com.volumetricpixels.staticapi.game.Game;
+import com.volumetricpixels.staticapi.game.Gamepack;
 
 /**
  * Represents a game

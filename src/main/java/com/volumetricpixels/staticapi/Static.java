@@ -1,8 +1,8 @@
-package com.volumetricpixels.staticrts.api;
+package com.volumetricpixels.staticapi;
 
 import org.spout.api.plugin.CommonPlugin;
 
-import com.volumetricpixels.staticrts.api.game.GameManager;
+import com.volumetricpixels.staticapi.game.GameManager;
 
 /**
  * A static class for access to Static's API

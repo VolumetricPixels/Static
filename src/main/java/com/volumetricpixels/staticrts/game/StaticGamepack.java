@@ -1,6 +1,6 @@
 package com.volumetricpixels.staticrts.game;
 
-import com.volumetricpixels.staticrts.api.game.Gamepack;
+import com.volumetricpixels.staticapi.game.Gamepack;
 
 /**
  * Represents a gamepack
