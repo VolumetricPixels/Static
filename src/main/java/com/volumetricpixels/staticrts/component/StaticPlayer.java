@@ -4,12 +4,12 @@ import org.spout.api.component.components.EntityComponent;
 
 import com.volumetricpixels.staticrts.game.StaticGame;
 
-public class StaticPlayerComponent extends EntityComponent {
+public class StaticPlayer extends EntityComponent {
     private String playerTag;
     private StaticGame currentGame;
     private boolean isInGame;
 
-    public StaticPlayerComponent(String playerName) {
+    public StaticPlayer(String playerName) {
         this.playerTag = playerName;
     }
 
@@ -21,7 +21,7 @@ public class StaticPlayerComponent extends EntityComponent {
         return currentGame;
     }
 
-    public StaticPlayerComponent joinGame(StaticGame game) {
+    public StaticPlayer joinGame(StaticGame game) {
         currentGame = game;
 
         if (game == null) {
@@ -35,7 +35,7 @@ public class StaticPlayerComponent extends EntityComponent {
         return this;
     }
 
-    public StaticPlayerComponent quitGame() {
+    public StaticPlayer quitGame() {
         currentGame.handleGameQuit(playerTag);
 
         return this;

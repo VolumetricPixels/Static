@@ -4,10 +4,10 @@ import org.spout.api.component.components.EntityComponent;
 
 import com.volumetricpixels.staticrts.game.StaticGame;
 
-public class ArtificialIntelligenceComponent extends EntityComponent {
+public class ArtificialIntelligence extends EntityComponent {
     private StaticGame game;
 
-    public ArtificialIntelligenceComponent(StaticGame game) {
+    public ArtificialIntelligence(StaticGame game) {
         this.game = game;
     }
 
