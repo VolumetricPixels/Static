@@ -1,3 +1,9 @@
+/*
+ * This file is part of Static.
+ *
+ * Copyright (c) 2012-2012 VolumetricPixels <http://volumetricpixels.com>
+ * Static is licensed under the VolumetricPixels License Version 1
+ */
 package com.volumetricpixels.staticrts.server;
 
 import java.util.ArrayList;
@@ -20,7 +26,7 @@ public class StaticServerConfiguration extends ConfigurationHolderConfiguration 
         super.load();
         super.save();
 
-        this.setWritesDefaults(true);
+        setWritesDefaults(true);
     }
 
     @Override
