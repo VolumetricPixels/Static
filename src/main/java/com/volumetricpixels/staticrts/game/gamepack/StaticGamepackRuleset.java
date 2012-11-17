@@ -5,7 +5,7 @@ import java.io.File;
 import org.spout.api.exception.ConfigurationException;
 import org.spout.api.util.config.yaml.YamlConfiguration;
 
-public class StaticRuleset {
+public class StaticGamepackRuleset {
     private StaticGamepack gamepack;
     private File rulesFile;
 
@@ -13,9 +13,13 @@ public class StaticRuleset {
     private int timeLimitMins = -1; // -1 = unlimited
     private boolean dynamicTerrain = false;
 
-    protected StaticRuleset(StaticGamepack gamepack, File rulesFile) {
+    protected StaticGamepackRuleset(StaticGamepack gamepack, File rulesFile) {
         this.gamepack = gamepack;
         this.rulesFile = rulesFile;
+    }
+
+    public StaticGamepack getGamepack() {
+        return gamepack;
     }
 
     public int getWinningScore() {

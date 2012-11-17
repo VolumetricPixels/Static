@@ -18,6 +18,13 @@ public interface Game {
     public List<String> getPlayers();
 
     /**
+     * Gets the AI Entity ids in this game
+     * 
+     * @return A List of Entity ids of the AI in this game
+     */
+    public List<Integer> getAI();
+
+    /**
      * Gets the world for this game
      * 
      * @return The World this game is in
@@ -37,4 +44,11 @@ public interface Game {
      * @return This game's active gamepack
      */
     public Gamepack getGamepack();
+
+    /**
+     * Checks if the game has started
+     * 
+     * @return Whether this game has started
+     */
+    public boolean hasStarted();
 }

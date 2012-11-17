@@ -8,8 +8,11 @@ public class StaticAI extends EntityComponent {
     private StaticGame game;
     private boolean shouldExecuteActions = true;
 
-    public StaticAI(StaticGame game) {
-        this.game = game;
+    public StaticAI() {
+    }
+
+    @Override
+    public void onAttached() {
     }
 
     @Override
@@ -17,6 +20,10 @@ public class StaticAI extends EntityComponent {
         if (shouldExecuteActions) {
             // TODO: Handle controlling the AI to make it execute actions
         }
+    }
+
+    public void setGame(StaticGame game) {
+        this.game = game;
     }
 
     public void remove() {

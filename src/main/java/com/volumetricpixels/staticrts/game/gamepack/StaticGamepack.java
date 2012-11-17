@@ -21,10 +21,11 @@ public class StaticGamepack implements Gamepack {
     private File terrainTexturesDir;
 
     // Gamepack Modules
-    private StaticRuleset ruleset;
+    private StaticGamepackRuleset ruleset;
+    private StaticGamepackProperties propertyConfig;
 
-    public StaticGamepack(File gamepackDirectory) {
-        this.gamepackDirectory = gamepackDirectory;
+    public StaticGamepack(File gamepackDir) {
+        gamepackDirectory = gamepackDir;
 
         rules = new File(gamepackDirectory, "rules.yml");
         properties = new File(gamepackDirectory, "properties.yml");
@@ -33,7 +34,10 @@ public class StaticGamepack implements Gamepack {
         buildingModelsDir = new File(gamepackDirectory, "models" + File.separator + "buildings");
         terrainTexturesDir = new File(gamepackDirectory, "textures" + File.separator + "terrain");
 
-        ruleset = new StaticRuleset(this, rules);
+        ruleset = new StaticGamepackRuleset(this, rules);
         ruleset.load();
+
+        propertyConfig = new StaticGamepackProperties(this, properties);
+        propertyConfig.load();
     }
 }

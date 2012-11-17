@@ -3,12 +3,14 @@ package com.volumetricpixels.staticrts.component;
 import org.spout.api.component.components.EntityComponent;
 import org.spout.api.entity.Player;
 
+import com.volumetricpixels.staticapi.game.Game;
+import com.volumetricpixels.staticapi.player.GameStatus;
+
 import com.volumetricpixels.staticrts.game.StaticGame;
 
 public class StaticPlayer extends EntityComponent {
     private String playerName;
-    private StaticGame currentGame;
-    private boolean isInGame;
+    private GameStatus gameStatus;
 
     public StaticPlayer() {
     }
@@ -23,11 +25,11 @@ public class StaticPlayer extends EntityComponent {
     }
 
     public boolean isInGame() {
-        return isInGame;
+        return gameStatus.inGame();
     }
 
-    public StaticGame getGame() {
-        return currentGame;
+    public Game getGame() {
+        return gameStatus.getGame();
     }
 
     public StaticPlayer joinGame(StaticGame game) {
@@ -35,14 +37,14 @@ public class StaticPlayer extends EntityComponent {
             throw new IllegalArgumentException("Cannot join a null game!");
         }
 
-        isInGame = true;
-        currentGame = game;
+        gameStatus.onJoin(game);
         game.handleGameJoin(playerName);
         return this;
     }
 
     public StaticPlayer quitGame() {
-        currentGame.handleGameQuit(playerName);
+        ((StaticGame) getGame()).handleGameQuit(playerName);
+        gameStatus.onQuit();
         return this;
     }
 }

@@ -14,8 +14,10 @@ import com.volumetricpixels.staticapi.game.Gamepack;
  */
 public class StaticGame implements Game {
     private List<String> players = new ArrayList<String>();
+    private List<Integer> ai = new ArrayList<Integer>();
     private String worldName;
     private Gamepack gamepack;
+    private boolean started;
 
     public StaticGame(String worldName, Gamepack gamepack) {
         this.worldName = worldName;
@@ -40,6 +42,16 @@ public class StaticGame implements Game {
     @Override
     public Gamepack getGamepack() {
         return gamepack;
+    }
+
+    @Override
+    public List<Integer> getAI() {
+        return ai;
+    }
+
+    @Override
+    public boolean hasStarted() {
+        return started;
     }
 
     public boolean handleGameJoin(String playerName) {
