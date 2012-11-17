@@ -15,40 +15,40 @@ public interface Game {
      * 
      * @return A List of names of the players in this game
      */
-    public List<String> getPlayers();
+    List<String> getPlayers();
 
     /**
      * Gets the AI Entity ids in this game
      * 
      * @return A List of Entity ids of the AI in this game
      */
-    public List<Integer> getAI();
+    List<Integer> getAI();
 
     /**
      * Gets the world for this game
      * 
      * @return The World this game is in
      */
-    public World getWorld();
+    World getWorld();
 
     /**
      * Gets the name of the World this game is in
      * 
      * @return The name of this game's world
      */
-    public String getWorldName();
+    String getWorldName();
 
     /**
      * Gets the gamepack being used in this game
      * 
      * @return This game's active gamepack
      */
-    public Gamepack getGamepack();
+    Gamepack getGamepack();
 
     /**
      * Checks if the game has started
      * 
      * @return Whether this game has started
      */
-    public boolean hasStarted();
+    boolean hasStarted();
 }

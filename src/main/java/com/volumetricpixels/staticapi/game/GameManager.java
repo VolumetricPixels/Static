@@ -3,9 +3,9 @@ package com.volumetricpixels.staticapi.game;
 import java.util.List;
 
 public interface GameManager {
-    public List<Game> getGames();
+    List<Game> getGames();
 
-    public List<String> getGameWorlds();
+    List<String> getGameWorlds();
 
-    public boolean isServer();
+    boolean isServer();
 }
