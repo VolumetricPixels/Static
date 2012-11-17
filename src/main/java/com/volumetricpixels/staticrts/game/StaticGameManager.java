@@ -5,10 +5,12 @@ import java.util.List;
 
 import com.volumetricpixels.staticapi.game.Game;
 import com.volumetricpixels.staticapi.game.GameManager;
+
 import com.volumetricpixels.staticrts.server.StaticServerConfiguration;
 
 public class StaticGameManager implements GameManager {
     private List<Game> games = new ArrayList<Game>();
+    private boolean server = false;
 
     @Override
     public List<Game> getGames() {
@@ -18,5 +20,14 @@ public class StaticGameManager implements GameManager {
     @Override
     public List<String> getGameWorlds() {
         return StaticServerConfiguration.STATIC_WORLDS.getStringList();
+    }
+
+    @Override
+    public boolean isServer() {
+        return server;
+    }
+
+    public void setIsServer(boolean server) {
+        this.server = server;
     }
 }

@@ -1,16 +1,25 @@
 package com.volumetricpixels.staticrts.component;
 
 import org.spout.api.component.components.EntityComponent;
+import org.spout.api.entity.Player;
 
 import com.volumetricpixels.staticrts.game.StaticGame;
 
 public class StaticPlayer extends EntityComponent {
-    private String playerTag;
+    private String playerName;
     private StaticGame currentGame;
     private boolean isInGame;
 
-    public StaticPlayer(String playerName) {
-        this.playerTag = playerName;
+    public StaticPlayer() {
+    }
+
+    @Override
+    public void onAttached() {
+        try {
+            playerName = ((Player) getOwner()).getName();
+        } catch (ClassCastException e) {
+            throw new IllegalStateException("Cannot attach a StaticPlayer component to a non-player Entity!");
+        }
     }
 
     public boolean isInGame() {
@@ -22,22 +31,18 @@ public class StaticPlayer extends EntityComponent {
     }
 
     public StaticPlayer joinGame(StaticGame game) {
-        currentGame = game;
-
         if (game == null) {
-            isInGame = false;
-        } else {
-            isInGame = true;
+            throw new IllegalArgumentException("Cannot join a null game!");
         }
 
-        game.handleGameJoin(playerTag);
-
+        isInGame = true;
+        currentGame = game;
+        game.handleGameJoin(playerName);
         return this;
     }
 
     public StaticPlayer quitGame() {
-        currentGame.handleGameQuit(playerTag);
-
+        currentGame.handleGameQuit(playerName);
         return this;
     }
 }

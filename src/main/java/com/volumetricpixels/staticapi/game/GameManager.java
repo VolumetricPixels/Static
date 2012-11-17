@@ -6,4 +6,6 @@ public interface GameManager {
     public List<Game> getGames();
 
     public List<String> getGameWorlds();
+
+    public boolean isServer();
 }
