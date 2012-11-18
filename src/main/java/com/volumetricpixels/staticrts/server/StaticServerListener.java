@@ -24,7 +24,7 @@ public class StaticServerListener implements Listener {
             return;
         }
 
-        StaticPlayer spc = e.getPlayer().get(StaticPlayer.class);
+        StaticPlayer spc = e.getPlayer().getExact(StaticPlayer.class);
         if (spc.isInGame() == false) {
             return;
         }
