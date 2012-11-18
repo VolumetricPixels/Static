@@ -21,9 +21,9 @@ import com.volumetricpixels.staticapi.game.Gamepack;
 public class StaticGame implements Game {
     private List<String> players = new ArrayList<String>();
     private List<Integer> ai = new ArrayList<Integer>();
-    private String worldName;
-    private Gamepack gamepack;
-    private boolean started;
+    private String worldName = "";
+    private Gamepack gamepack = null;
+    private boolean started = false;
 
     public StaticGame(String worldName, Gamepack gamepack) {
         this.worldName = worldName;

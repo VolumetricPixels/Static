@@ -4,7 +4,7 @@
  * Copyright (c) 2012-2012 VolumetricPixels <http://volumetricpixels.com>
  * Static is licensed under the VolumetricPixels License Version 1
  */
-package com.volumetricpixels.staticrts;
+package com.volumetricpixels.staticrts.server;
 
 import org.spout.api.entity.Player;
 import org.spout.api.event.EventHandler;
@@ -16,18 +16,16 @@ import org.spout.api.event.player.PlayerInteractEvent.Action;
 import org.spout.api.event.player.PlayerJoinEvent;
 
 import com.volumetricpixels.staticrts.component.StaticPlayer;
-import com.volumetricpixels.staticrts.server.StaticServerConfiguration;
 
-public class StaticListener implements Listener {
+public class StaticServerListener implements Listener {
     @EventHandler(order = Order.LATEST_IGNORE_CANCELLED)
     public void handleInteractions(PlayerInteractEvent e) {
-        if (e.getPlayer().hasExact(StaticPlayer.class)) {
-            StaticPlayer spc = e.getPlayer().get(StaticPlayer.class);
+        if (!e.getPlayer().hasExact(StaticPlayer.class)) {
+            return;
+        }
 
-            if (spc.isInGame() == false) {
-                return;
-            }
-        } else {
+        StaticPlayer spc = e.getPlayer().get(StaticPlayer.class);
+        if (spc.isInGame() == false) {
             return;
         }
 

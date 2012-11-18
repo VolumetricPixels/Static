@@ -17,6 +17,7 @@ import com.volumetricpixels.staticapi.game.GameManager;
 
 import com.volumetricpixels.staticrts.game.StaticGameManager;
 import com.volumetricpixels.staticrts.server.StaticServerConfiguration;
+import com.volumetricpixels.staticrts.server.StaticServerListener;
 
 public final class StaticPlugin extends CommonPlugin implements StaticImpl {
     private static boolean server = false;
@@ -33,6 +34,7 @@ public final class StaticPlugin extends CommonPlugin implements StaticImpl {
         Platform p = Spout.getPlatform();
         if (p == Platform.SERVER || p == Platform.PROXY) {
             server = true;
+
             // Load config
             config = new StaticServerConfiguration();
 
@@ -53,6 +55,8 @@ public final class StaticPlugin extends CommonPlugin implements StaticImpl {
     @Override
     public void onEnable() {
         if (server) {
+            Spout.getEventManager().registerEvents(new StaticServerListener(), this);
+
             // TODO: Server stuff
         } else if (client) {
             // TODO: Client stuff
