@@ -6,7 +6,7 @@
  */
 package com.volumetricpixels.staticrts.component;
 
-import org.spout.api.component.components.EntityComponent;
+import org.spout.api.component.type.EntityComponent;
 import org.spout.api.entity.Player;
 
 import com.volumetricpixels.staticapi.game.Game;
