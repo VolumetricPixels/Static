@@ -16,26 +16,28 @@ import com.volumetricpixels.staticrts.game.StaticGame;
 
 public class StaticPlayer extends EntityComponent {
     private String playerName;
-    private GameStatus gameStatus;
+    private GameStatus gameStatusComponent;
 
     public StaticPlayer() {
     }
 
     @Override
     public void onAttached() {
-        try {
-            playerName = ((Player) getOwner()).getName();
-        } catch (ClassCastException e) {
+        if (getOwner() instanceof Player) {
+            Player player = (Player) getOwner();
+            playerName = player.getName();
+            gameStatusComponent = player.has(GameStatus.class) ? player.get(GameStatus.class) : player.add(GameStatus.class);
+        } else {
             throw new IllegalStateException("Cannot attach a StaticPlayer component to a non-player Entity!");
         }
     }
 
     public boolean isInGame() {
-        return gameStatus.inGame();
+        return gameStatusComponent.inGame();
     }
 
     public Game getGame() {
-        return gameStatus.getGame();
+        return gameStatusComponent.getGame();
     }
 
     public StaticPlayer joinGame(StaticGame game) {
@@ -43,14 +45,14 @@ public class StaticPlayer extends EntityComponent {
             throw new IllegalArgumentException("Cannot join a null game!");
         }
 
-        gameStatus.onJoin(game);
+        gameStatusComponent.onJoin(game);
         game.handleGameJoin(playerName);
         return this;
     }
 
     public StaticPlayer quitGame() {
         ((StaticGame) getGame()).handleGameQuit(playerName);
-        gameStatus.onQuit();
+        gameStatusComponent.onQuit();
         return this;
     }
 }

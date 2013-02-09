@@ -6,16 +6,23 @@
  */
 package com.volumetricpixels.staticapi.player;
 
+import org.spout.api.component.type.EntityComponent;
+import org.spout.api.entity.Player;
+
 import com.volumetricpixels.staticapi.game.Game;
 
-public class GameStatus {
+public class GameStatus extends EntityComponent {
     private String player;
     private Game game;
-    private int score;
     private boolean inGame;
 
-    public GameStatus(String player) {
-        this.player = player;
+    @Override
+    public void onAttached() {
+        if (getOwner() instanceof Player) {
+            player = ((Player) getOwner()).getName();
+        } else {
+            throw new IllegalStateException("Cannot attach GameStatus component to non-player Entity!");
+        }
     }
 
     public String getPlayerName() {
@@ -24,10 +31,6 @@ public class GameStatus {
 
     public Game getGame() {
         return game;
-    }
-
-    public int getScore() {
-        return score;
     }
 
     public boolean inGame() {
